@@ -5,7 +5,7 @@ body {
     font-family: sans-serif;
     line-height: 1.5;
     min-height: 100vh;
-    background-image: url("https://img.freepik.com/premium-vector/illustration-people-doing-outdoor-activities_52683-67462.jpg?ga=GA1.1.1183731104.1731564855&semt=ais_hybrid");
+    background-image: url("https://mrwallpaper.com/images/hd/4k-minimalist-green-aesthetic-forest-4dy9rddb1uqxgb46.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body {
 }
 
 .main {
-    background-color: #00000069;
+    background-color: #6fbb3c82;
     border-radius: 15px;    
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     padding: 10px 20px;
@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-    color: #ffd4a3;
+    color: #ffb663;
 }
 
 label {
@@ -55,14 +55,14 @@ button {
     border: none;   
     color: white;
     cursor: pointer;
-    background-color: #191b19;
+    background-color: #e2e2e2;
     width: 100%;
     font-size: 16px;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #006d00;
+    background-color: #0f5700d9;
 }
 
 .wrap {
@@ -74,3 +74,16 @@ button:hover {
 #userRegistrationFields {
     display: none; 
 }
+.btn {
+    font-weight: bold;
+    /* Other existing properties */
+}
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #ffb663;
+    object-fit: cover;
+}
+
