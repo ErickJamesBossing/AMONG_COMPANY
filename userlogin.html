@@ -10,8 +10,9 @@
 
 <body>
     <div class="main">
-        <h1 style="color: #39FF14;">LoginPage</h1>
-        <h3 style="color: #000000">Enter your login credentials</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/8801/8801434.png" alt="Profile Icon" class="profile-img">
+        
+        <h3 style="color: #000000">Enter your Account Information</h3>
 
         <form id="loginForm" onsubmit="return validateForm()">
             <label for="username">
@@ -26,9 +27,10 @@
             <input type="password" id="password" name="password" 
                    placeholder="Enter your Password" required>
 
-            <div class="wrap">
-                <button type="submit" class="btn" style="color: #39FF14;">Submit</button>
-            </div>
+                   <div class="wrap">
+                    <button type="submit" class="btn" style="color: #000000; font-weight: bold;">Submit</button>
+                </div>
+                
         </form>
 
         <p>Not registered?
@@ -48,7 +50,7 @@
                 return false;
             }
 
-            window.location.href = 'homepage.html';
+            window.location.href = 'userhomepage.html';
             return false;
         }
     </script>
