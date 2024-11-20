@@ -14,51 +14,105 @@
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-
     <div class="banner">
         <img src="./files/bg.jpg">
-    
-    <div class="content" id="home"> 
-        <nav>
-            <img src="drawing.png" class="logo" alt="Logo" title="WellLife360">
-            <a href="homepage.html" class="logo"></a>
-            
-            <ul class="navbar">
-                <li>
-                    <a href="homepage.html">Home</a>
-                    <a href="schedule.html">Schedule</a>
-                    <a href="request.html">Weather</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
- 
-        <div class="title">
-            <h1>WellLife360</h1>
-            <p>Embracing Wellness and a Balanced Lifestyle for a Better You</p>         
+        <div class="content" id="home"> 
+            <nav>
+                <a href="userhomepage.html" class="logo" title="WellLife360">WL360</a>
+                <ul class="navbar">
+                    <li>
+                        <a href="homepage.html">Home</a>
+                        <a href="schedule.html">Schedule</a>
+                        <a href="request.html">Weather</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="title">
+                <h1>WellLife360</h1>
+                <p>Embracing Wellness and a Balanced Lifestyle for a Better You</p>         
+            </div>
         </div>
-    </div>
     </div>
 
     <section class="container">
-        <div class="text">
-            <h2>What is a Balanced Lifestyle?</h2>
+        <div class="text" style="text-align: center; margin-bottom: 20px;">
+            <h2 style="font-size: 24px; color: #000000; font-family: 'Paytone One', sans-serif;">
+                What is a Balanced Lifestyle?
+            </h2>
         </div>
-        <div class="rowitems" style="display: flex; align-items: center;">
-            <div class="container-box" style="flex: 1; padding-right: 20px;">
-                <h4>A balanced lifestyle is about making conscious decisions to prioritize health and well-being in all aspects of your life. This involves taking care of your physical, mental, and emotional health through proper nutrition, regular exercise, and stress management.</h4> 
-                <h2>Key components of a balanced lifestyle:</h2>
-                <h4>1) Healthy Eating Habits <br>2) Regular Exercise <br>3) Mental Wellness <br>4) Stress Management <br>5) Quality Sleep <br>6) Social Connections</h4><br> 
-                <h4>Below are a few images of people enjoying healthy activities.</h4><br>
+        <div class="rowitems" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
+            <!-- Text Content -->
+            <div class="container-box" style="flex: 1; min-width: 280px;">
+                <h4 style="font-size: 16px; color: #333; line-height: 1.6;">
+                    A balanced lifestyle means making intentional choices to nurture your physical, mental, and emotional health. It's about creating harmony in your daily life, emphasizing well-being through:
+                </h4> 
+                <h4 style="font-size: 14px; color: #555; margin-top: 15px;">
+                    <strong>Key Components:</strong>
+                    <ul style="margin: 10px 0 20px 20px; list-style: disc; color: #333;">
+                        <li>Healthy Eating Habits</li>
+                        <li>Regular Exercise</li>
+                        <li>Mental Wellness</li>
+                        <li>Stress Management</li>
+                        <li>Quality Sleep</li>
+                        <li>Social Connections</li>
+                    </ul>
+                </h4>
+                <h4 style="font-size: 14px; color: #555;">
+                    Below are a few inspiring images of people enjoying healthy activities.
+                </h4>
             </div>
-            <div class="image-container" style="flex: 1;">
-                <img src="Healthy-Lifestyle.jpg" alt="" style="width: 100%; max-width: 300px;">
-                <img src="work_life_balance.webp" alt="" style="width: 100%; max-width: 300px; margin-top: 20px;">
+            <!-- Image Content -->
+            <div class="image-container" style="flex: 1; min-width: 280px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                <img src="Healthy-Lifestyle.jpg" alt="Healthy Lifestyle" class="interactive-img" 
+                    style="width: 100%; max-width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                <img src="work_life_balance.webp" alt="Work-Life Balance" class="interactive-img" 
+                    style="width: 100%; max-width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
             </div>
+            
         </div>
     </section>
     
+    <!-- Modal Structure -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select modal elements
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const captionText = document.getElementById('caption');
+            const closeBtn = document.querySelector('.close');
+
+            // Add click events to images
+            document.querySelectorAll('.interactive-img').forEach(img => {
+                img.addEventListener('click', () => {
+                    modal.style.display = 'block';
+                    modalImg.src = img.src;
+                    captionText.innerHTML = img.alt;
+                });
+            });
+
+            // Close the modal
+            closeBtn.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            // Close the modal on outside click
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
 
 
     <section class="fwmanage" id="fwmanage">
