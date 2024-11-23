@@ -1,0 +1,76 @@
+
+/* what is wellness part  ----------------------------------------------------------------------------------------------------------------------- */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#learnMoreBtn {
+    padding: 10px 20px;
+    background-color: hsla(164, 100%, 50%, 0.634);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#learnMoreBtn:hover {
+    background-color: #1ca31c82;
+}
+/* what is wellness part --------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* view announcements part --------------------------------------------------------------------------------------------------------------------------*/
+
+/* Style the button container to center it */
+.btn-container {
+    display: inline-block;
+    text-align: center;
+}
+
+/* Style the actual button */
+.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #31e49dca; /* Blue background */
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none; /* Removes underline from link */
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #1aca23; /* Darker blue when hovered */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Button active effect */
+.btn:active {
+    background-color: #23df3f; /* Even darker blue when clicked */
+}
+
+/* Optional: Style the text to make it more readable */
+h1 {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+/* view announcements part --------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* image sets --------------------------------------------------------------------------------------------------------------------------*/
+.activity-image {
+    width: 50px;   /* Set a fixed width for all images */
+    height: 50px;  /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the images fill the specified dimensions without distortion */
+}
+/* image sets --------------------------------------------------------------------------------------------------------------------------*/
